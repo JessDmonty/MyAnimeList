@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.anime-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.anime-card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.anime-poster {
+    width: 100%;
+    height: 350px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensure the entire image is visible */
+}
+
+.anime-details {
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+}
+
+.anime-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.anime-imdb {
+    font-size: 14px;
+    color: #555;
+}
